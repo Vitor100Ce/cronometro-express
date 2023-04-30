@@ -7,9 +7,11 @@ O servidor deverá funcionar escutando a porta 8000, através do endereço http:
 **a) Recurso principal (raiz)**
 
 No principal recurso do servidor, acessado através de http://localhost:8000 deverá ser retornada uma mensagem mostrando o tempo atual do cronômetro, seguindo o seguinte formato:
+
 ```
 Tempo atual do cronômetro: 01 minutos e 07 segundos
-``
+```
+
 Tanto os minutos quanto os segundos deverão ser mostrados com dois dígitos, completando com zero à esquerda quando necessário.
 
 b) Iniciar
@@ -19,9 +21,11 @@ O recurso iniciar será responsável por iniciar a contagem do cronômetro e apl
 Este recurso deverá ser acessado através do endereço http://localhost:8000/iniciar
 
 Após iniciar a contagem do cronômetro, este recurso deverá retornar a mensagem:
+
 ```
 Cronômetro iniciado!
 ```
+
 Dica: Para controlar o tempo do cronômetro no servidor pode ser utilizado o setInterval().
 
 c) Pausar
@@ -31,6 +35,7 @@ O cronômetro deverá também possuir um recurso para pausar o tempo do cronôme
 Este recurso deverá ser acessado através do endereço http://localhost:8000/pausar
 
 Após pausar a contagem do cronômetro, este recurso deverá retornar a mensagem:
+
 ```
 Cronômetro pausado!
 ```
@@ -42,9 +47,11 @@ Este recurso será responsável por continuar a contagem do tempo do cronômetro
 Este recurso deverá ser acessado através do endereço http://localhost:8000/continuar
 
 Após continuar (resumir) a contagem do cronômetro, este recurso deverá retornar a mensagem:
+
 ```
 Cronômetro continuando!
 ```
+
 e) Zerar
 
 Para finalizar, o cronômetro também deverá poder ser zerado através do recurso zerar.
@@ -52,7 +59,9 @@ Para finalizar, o cronômetro também deverá poder ser zerado através do recur
 Este recurso deverá ser acessado através do endereço http://localhost:8000/zerar
 
 Após zerar os valores de minutos e segundos do cronômetro, este recurso deverá retornar a mensagem:
+
 ```
 Cronômetro zerado!
 ```
+
 **Importante:** O recurso zerar não deverá afetar o estado do cronômetro e também não deverá afetar o funcionamento dos outros recursos. Portanto se o cronômetro estiver parado e o recurso zerar for requisitado, após zerar os valores o cronômetro deverá se manter parado. O proporcional deverá acontecer para quando o cronômetro estiver executando a contagem (zerar os valores sem parar de contar).
