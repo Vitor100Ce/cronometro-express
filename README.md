@@ -14,7 +14,7 @@ Tempo atual do cronômetro: 01 minutos e 07 segundos
 
 Tanto os minutos quanto os segundos deverão ser mostrados com dois dígitos, completando com zero à esquerda quando necessário.
 
-b) Iniciar
+**b) Iniciar**
 
 O recurso iniciar será responsável por iniciar a contagem do cronômetro e aplicar toda a lógica que for necessária para que o cronômetro funcione corretamente.
 
@@ -28,7 +28,7 @@ Cronômetro iniciado!
 
 Dica: Para controlar o tempo do cronômetro no servidor pode ser utilizado o setInterval().
 
-c) Pausar
+**c) Pausar**
 
 O cronômetro deverá também possuir um recurso para pausar o tempo do cronômetro.
 
@@ -40,7 +40,7 @@ Após pausar a contagem do cronômetro, este recurso deverá retornar a mensagem
 Cronômetro pausado!
 ```
 
-d) Continuar
+**d) Continuar**
 
 Este recurso será responsável por continuar a contagem do tempo do cronômetro.
 
@@ -52,7 +52,7 @@ Após continuar (resumir) a contagem do cronômetro, este recurso deverá retorn
 Cronômetro continuando!
 ```
 
-e) Zerar
+**e) Zerar**
 
 Para finalizar, o cronômetro também deverá poder ser zerado através do recurso zerar.
 
